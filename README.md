@@ -1,68 +1,65 @@
+# SpecX Launch Programs
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="center">
+    <img src="https://github.com/bikram-choudhury/SpecX-Launch-Programs/blob/master/assets/desktop-view.PNG" alt="Desktop View" width="900" height="400">
+</p>
+<p align="center">
+    <img src="https://github.com/bikram-choudhury/SpecX-Launch-Programs/blob/master/assets/tablet-view.PNG" alt="Tablet View" width="450" height="500">
+    <img src="https://github.com/bikram-choudhury/SpecX-Launch-Programs/blob/master/assets/mobile-view.PNG" alt="Tablet View" width="350" height="500">
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+**What's included:**
+- [Redux](https://redux.js.org/) for state management
+- React Router
+- CSS Modules, Scss, and autoprefixer 
+- Responsive
+- Runtime type checking for React props with [prop-types](https://github.com/facebook/prop-types)
+- [ESLint](https://eslint.org/docs/rules/) run on commit
+- [Jest](https://jestjs.io/en/) and [Enzyme](https://enzymejs.github.io/enzyme/docs/guides/jest.html) to run unit testcases
+- Dev server with hot reloading styles
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Initial setup
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- `npm install`
 
-### `npm test`
+## Development
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `npm start`
+  - Start the dev server at [http://localhost:3000](http://localhost:3000)
+- `npm run test:watch`
+  - Run `jest` in watch mode
+- `npm run test:coverage`
+  - Run `jest` and produce the coverage report for all files
 
-### `npm run build`
+## Production
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm run build`
+  - Bundle the JSX files into `build` directory
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## General architecture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This app has entrypoint for the code `src/index.js` first checks if the current browser needs to be polyfilled and then defers to src/main.js to hydrate the React application. These two files are only ever called on the client, so you can safely reference any browser APIs here without anything fancy. The rest of the client code is a React application. You can edit/modify everything inside src/ and make it your own.
 
-### `npm run eject`
+This app has been develpoed with all latest react hooks like: `useEffect(), useCallback(), memo(), useHistory()`. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Test Report
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="center">
+    <img src="https://github.com/bikram-choudhury/SpecX-Launch-Programs/blob/master/assets/test-coverage.PNG" alt="Tablet View" width="850" height="380">
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Lighthouse
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p align="center">
+    <img src="https://github.com/bikram-choudhury/SpecX-Launch-Programs/blob/master/assets/lighthouse-report.PNG" alt="Tablet View" width="850" height="380">
+</p>
 
-## Learn More
+### See in details
+- [Mobile](https://github.com/bikram-choudhury/SpecX-Launch-Programs/blob/master/assets/mobile-lighthouse-report.pdf)
+- [Browser](https://github.com/bikram-choudhury/SpecX-Launch-Programs/blob/master/assets/desktop-lighthouse-report.pdf)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[👉 See the Website](https://specx-launch-programs.netlify.app)
