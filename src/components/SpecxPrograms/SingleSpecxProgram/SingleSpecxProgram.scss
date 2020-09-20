@@ -1,0 +1,44 @@
+.singleSpecxProgram {
+    height: 400px;
+    padding: 15px 10px;
+    background-color: #ffffff;
+    margin: 0 .35rem 1rem .75rem;
+    border-radius: 7px;
+
+    .singleSpecxProgram__imageHolder {
+        height: 170px;
+        background-color: #e0e0e091;
+        border-radius: 5px;
+        padding: 10px 0;
+
+        .singleSpecxProgram__image {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            display: block;
+        }
+    }
+    .singleSpecxProgram__title {
+        font-weight: bolder;
+        color: #3949ab;
+        margin: 10px 0;
+    }
+    .singleSpecxProgram__infoHolder {
+        margin-top: 5px;
+
+        .singleSpecxProgram__info {
+            margin-bottom: 10px;
+            
+            ul {
+                margin: 0 auto;
+            }
+            .singleSpecxProgram__infoTitle {
+                font-weight: bolder;
+            }
+            .singleSpecxProgram__infoValue {
+                color: #3949ab;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

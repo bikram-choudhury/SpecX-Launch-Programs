@@ -1,0 +1,50 @@
+@media screen and (min-width: 1024px) {
+    .specxProgramFilters {
+        width: 18%;
+    }
+    .specxPrograms {
+        .singleSpecxProgram {
+            width: 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+    .specxProgramFilters {
+        width: 29%;
+    }
+    .specxPrograms {
+        .singleSpecxProgram {
+            width: 41%;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 699px) {
+    .specxProgramFilters {
+        width: 45%;
+    }
+    .specxPrograms {
+        .singleSpecxProgram {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .specxLaunchPrograms {
+        .specxLaunchPrograms__container {
+            flex-direction: column;
+
+            .specxPrograms {
+                padding: 0;
+                margin: 0;
+                flex-direction: column;
+
+                .singleSpecxProgram {
+                    margin: 0 0 1rem 0;
+                }
+            }
+        }
+    }
+}

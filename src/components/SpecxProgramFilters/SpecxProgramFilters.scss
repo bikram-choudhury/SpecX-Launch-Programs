@@ -1,0 +1,23 @@
+.specxProgramFilters {
+    .specxProgramFilters__wrapper {
+        background-color: #ffffff;
+        padding-bottom: 50px;
+        border-radius: 7px;
+        margin-bottom: 20px;
+
+        .specxProgramFilters__header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+
+            .specxProgramFilters__clear {
+                color: #ff5722;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+            h4, h5 {
+                margin: 0.75rem;
+            }
+        }
+    }
+}

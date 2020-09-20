@@ -1,0 +1,38 @@
+.filterCard {
+    padding: 10px 0;
+
+    .filterCard__header {
+        text-align: center;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    
+        .filterCard__headerTitle {
+            width: 60%;
+            border-bottom: 1.9px solid #BDBDBD;
+        }
+    }
+    .filterCard__options {
+        display: flex;
+        flex-wrap: wrap;
+
+        .filterCard__optionsBadge {
+            width: 50%;
+            text-align: center;
+            margin-bottom: 7px;
+
+            .filterCard__optionsBadgeTitle {
+                padding: 1px 13px;
+                border-radius: 3px;
+                font-size: 13px;
+                background: #c5e1a5;
+                cursor: pointer;
+                text-transform: capitalize;
+
+                &.active {
+                    background: #8bc34a;
+                }
+            }
+        }
+    }
+}
